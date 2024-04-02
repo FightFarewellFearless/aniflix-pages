@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AniFlix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+    body {
+        display: contents;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container1 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #downloadContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #download {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #download:hover {
+        background-color: #0069d9;
+    }
+
+    #github {
+        background-color: #2b3138;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px
+    }
+
+    #github:hover {
+        background-color: #22262b;
+    }
+
+    #image {
+        width: 50%;
+        height: 50%;
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #container2 {
+        display: flex;
+        background-color: aqua;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-shrink: 0;
+    }
+
+    .left>* {
+        max-width: 70%;
+    }
+
+    .right {
+        display: flex;
+        flex: 1;
+        background-color: #3295ff;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-shrink: 0;
+    }
+
+    .right>* {
+        max-width: 70%;
+    }
+
+    #container3 {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
 <body>
-    Hello World!
-    test, it worked!
+    <div id="container1">
+        <img id="image" src="../githubAssets/screenshot.jpg" alt="aniflix screenshot">
+        <h2>AniFlix</h2>
+        <p>Projek open source yang dibuat untuk mempermudah menonton anime, tanpa biaya, tanpa iklan &#127916;</p>
+        <div id="downloadContainer">
+            <a id="download" href="https://github.com/FightFarewellFearless/AniFlix/releases"
+                style="text-decoration: none; color: inherit;">
+                <i class="fa fa-download"></i>
+                Download
+            </a>
+            <a href="https://github.com/FightFarewellFearless/AniFlix" id="github"
+                style="text-decoration: none; color: inherit">
+                <i class="fa fa-github"></i>
+                Github
+            </a>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="left">
+            <h2>
+                Open Source
+            </h2>
+            <p>
+                Projek open-source yang dibuat menggunakan react-native dan typescript.<br>
+                Kamu bahkan bisa menggunakan kode sumber aplikasi untuk membuat aplikasi kamu sendiri secara bebas
+                dengan mematuhi lisensi GPLv3
+            </p>
+        </div>
+        <div class="right">
+            <h2>Lengkap 1400+ lebih anime</h2>
+            <p>Tonton lebih dari 1400 anime secara gratis tanpa iklan sedikit pun!</p>
+        </div>
+        <div class="left">
+            <h2>
+                Update berkala
+            </h2>
+            <p>Aplikasi & episode di update secara berkala untuk memastikan pengalaman menonton terbaik!</p>
+        </div>
+        <div class="right">
+            <h2>Mudah digunakan</h2>
+            <p>
+                Target utama kami adalah UI yang simpel dan mudah digunakan.
+
+                Download episode anime dengan satu klik. Tonton tanpa login!
+            </p>
+        </div>
+    </div>
+    <div id="container3">
+        <h4 style="display: flex;justify-content: center;">Perhatian!</h2>
+        <div>
+            - Video yang terdapat di aplikasi bukan berasal dari server kami.
+            Semua video berasal dari server pihak ke tiga dan kami tidak punya akses sama sekali.
+        </div>
+        <div>
+            - Kami hanya membagikan video yang beredar di internet, kami tidak menyimpan satu video pun di server kami
+            sendiri
+        </div>
+    </div>
+    <div style="display: flex;font-weight: bold;justify-content: center;">
+        &copy; 2024 Pirles - AniFlix
+    </div>
 </body>
+
 </html>
