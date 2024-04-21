@@ -1,3 +1,3 @@
-User-Agent: *
+User-agent: *
 
-sitemap: https://fightfarewellfearless.github.io/aniflix-pages/sitemap.xml
+Sitemap: https://fightfarewellfearless.github.io/aniflix-pages/sitemap.xml
