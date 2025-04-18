@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -15,173 +15,127 @@
     <meta property="og:image" content="./favicon.ico">
     <meta property="og:url" content="https://fightfarewellfearless.github.io/aniflix-pages">
 
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     <title>AniFlix - Aplikasi android untuk nonton anime gratis tanpa iklan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    body {
-        display: contents;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    #container1 {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        background-image: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-        color: white;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #downloadContainer {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #download {
-        background-color: #007bff;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    #download:hover {
-        background-color: #0069d9;
-    }
-
-    #github {
-        background-color: #2b3138;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px
-    }
-
-    #github:hover {
-        background-color: #22262b;
-    }
-
-    #image {
-        width: 50%;
-        height: 50%;
-        max-width: 350px;
-        max-height: 350px;
-    }
-
-    #container2 {
-        display: flex;
-        background-color: aqua;
-        flex-direction: column;
-    }
-
-    .left {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-shrink: 0;
-    }
-
-    .left>* {
-        max-width: 70%;
-    }
-
-    .right {
-        display: flex;
-        flex: 1;
-        background-color: #3295ff;
-        flex-direction: column;
-        align-items: flex-end;
-        align-content: flex-end;
-        flex-shrink: 0;
-    }
-
-    .right>* {
-        max-width: 70%;
-    }
-
-    #container3 {
-        display: flex;
-        flex-direction: column;
-    }
-</style>
 
 <body>
-    <div id="container1">
-        <img id="image" src="./screenshot.jpg" alt="aniflix screenshot">
-        <h1>AniFlix</h1>
-        <h1>Projek open source yang dibuat untuk mempermudah menonton anime, tanpa biaya, tanpa iklan &#127916;</h1>
-        <div id="downloadContainer">
-            <a id="download" href="https://github.com/FightFarewellFearless/AniFlix/releases"
-                style="text-decoration: none; color: inherit;">
-                <i class="fa fa-download"></i>
-                Download
-            </a>
-            <a href="https://github.com/FightFarewellFearless/AniFlix" id="github"
-                style="text-decoration: none; color: inherit">
-                <i class="fa fa-github"></i>
-                Github
-            </a>
-        </div>
-    </div>
-    <div id="container2">
-        <div class="left">
-            <h1>
-                Open Source
-            </h1>
-            <p>
-                Projek open-source yang dibuat menggunakan react-native dan typescript.<br>
-                Kamu bahkan bisa menggunakan kode sumber aplikasi untuk membuat aplikasi kamu sendiri secara bebas
-                dengan mematuhi lisensi GPLv3
-            </p>
-        </div>
-        <div class="right">
-            <h1>Lengkap 1400+ lebih anime</h1>
-            <p>Tonton lebih dari 1400 anime secara gratis tanpa iklan sedikit pun!</p>
-        </div>
-        <div class="left">
-            <h1>
-                Update berkala
-            </h1>
-            <p>Aplikasi & episode di update secara berkala untuk memastikan pengalaman menonton terbaik!</p>
-        </div>
-        <div class="right">
-            <h1>Mudah digunakan</h1>
-            <p>
-                Target utama kami adalah UI yang simpel dan mudah digunakan.
+    <!-- Toggle Mode Gelap -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-                Download episode anime dengan satu klik. Tonton tanpa login!
-            </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <img src="./logo.png" alt="AniFlix logo" class="app-logo">
+            <h1>Nonton Anime Tanpa Batas</h1>
+            <p>Proyek open-source yang dirancang untuk memudahkan menonton anime - gratis sepenuhnya, tanpa iklan, tanpa ribet.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/FightFarewellFearless/AniFlix/releases" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Unduh Sekarang
+                </a>
+                <a href="https://github.com/FightFarewellFearless/AniFlix" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> Lihat di GitHub
+                </a>
+            </div>
         </div>
-    </div>
-    <div id="container3">
-        <h4 style="display: flex;justify-content: center;">Perhatian!</h1>
-            <div>
-                - Video yang terdapat di aplikasi bukan berasal dari server kami.
-                Semua video berasal dari server pihak ke tiga dan kami tidak punya akses sama sekali.
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Keunggulan AniFlix</h2>
             </div>
-            <div>
-                - Kami hanya membagikan video yang beredar di internet, kami tidak menyimpan satu video pun di server
-                kami
-                sendiri
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source</h3>
+                    <p>Dibangun dengan React Native dan TypeScript. Bebas menggunakan kode kami untuk membuat aplikasi Anda sendiri di bawah lisensi GPLv3.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Koleksi Lengkap</h3>
+                    <p>Akses lebih dari 1,400 serial anime secara gratis tanpa iklan sama sekali.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Update Berkala</h3>
+                    <p>Pembaruan aplikasi dan konten secara rutin untuk pengalaman menonton terbaik.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mudah Digunakan</h3>
+                    <p>Antarmuka sederhana dan intuitif. Unduh episode dengan satu klik. Tidak perlu login.</p>
+                </div>
             </div>
-    </div>
-    <div style="display: flex;font-weight: bold;justify-content: center;">
-        &copy; 2024 Pirles - AniFlix
-    </div>
+        </div>
+    </section>
+
+    <!-- Notice Section -->
+    <section class="notice">
+        <div class="container">
+            <h4>Penting!</h4>
+            <p>Semua video yang tersedia di aplikasi tidak dihosting di server kami. Mereka berasal dari sumber pihak ketiga dan kami tidak memiliki kendali atasnya.</p>
+            <p>Kami hanya membagikan video yang tersedia secara publik di internet dan tidak menyimpan konten apa pun di server kami sendiri.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; 2024 Pirles - AniFlix. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi untuk mode gelap
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // Cek preferensi pengguna dari localStorage
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        // Toggle mode gelap
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+        
+        // Deteksi preferensi sistem
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        if (prefersDarkScheme.matches && !localStorage.getItem('darkMode')) {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+    </script>
 </body>
 
 </html>
